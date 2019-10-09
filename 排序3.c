@@ -1,5 +1,5 @@
 #include<stdio.h>
-int insert(int arr[], int n){  //从小到大排序
+int insert(int arr[], int n){   //从小到大排序
     int i;
     int j;
     int temp;
