@@ -18,7 +18,7 @@ int main()
 
     for(i=0;i<4;i++)
     {
-        C_num[i] = (Cnum/C)%10; //取出了每位数
+        C_num[i] = (Cnum/C)%10; //取出了每位数如3214; 依次Cnum/C=3,32,321,3214,因为是int型
         Y_num[i] = (Ynum/C)%10;
         C/=10;
     }
