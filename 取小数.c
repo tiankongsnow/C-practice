@@ -1,25 +1,34 @@
 /*定义头文件函数*/
-#include<stdio.h>
-#include<stdlib.h>
-/*主函数*/
-int main(){
-    /*定义变量*/
-    float num;
-    float a;
-    int b;
-    int c;
-    int d;
-    int sum;
+#include <stdio.h>
+#include <stdlib.h>
 
-    while(scanf("%f", &num) != EOF) {
-            /*算法*/
-         a= num - (int)num;
-         b=a*10-(a*10-(int)(a*10));
-         c=(a*10-(int)(a*10))*10 - ((a*10-(int)(a*10))*10-(int)((a*10-(int)(a*10))*10));
-         d=((a*10-(int)(a*10))*10-(int)((a*10-(int)(a*10))*10))*10;
-         sum = b+c+d;
-         printf("sum is %d\n",sum);
-         system("pause");
-         return 0;
+int main()
+{
+    int sum,answer1,answer2,answer3;//save the number behind the dot
+    float num_f;//the number let user input
+    printf("Input decimal:");
+    scanf("%f",&num_f);
+
+    //get the number behind the dot
+    answer1 = (int)(num_f * 10) % 10;
+    answer2 = (int)(num_f * 100) % 10;
+    answer3 = (int)(num_f * 1000) % 10;
+    sum = answer1 + answer2 + answer3;
+
+    //it can be replaced by the next line
+    //sum = ((int)(num_f * 10)) % 10 + ((int)(num_f * 100)) % 10 + ((int)(num_f * 1000)) % 10;
+
+    printf("Add three decimals:%d\n",sum);
+
+    //if the number is multiple of 3
+    if(sum % 3 == 0)
+    {
+        printf("Is three's multiple\n");
     }
+    else
+    {
+        printf("Is not three's multiple\n");
+    }
+    system("pause");
+    return 0;
 }
