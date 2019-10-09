@@ -28,7 +28,7 @@ int main(){
     int day;
     int sum;
     int leap;
-    input = fopen("date.txt","r");
+    input = fopen("data.txt","r");
     output = fopen("result.txt", "w");
     fscanf(input,"%d" "%d" "%d", &year, &month, &day);
 
@@ -58,9 +58,10 @@ int main(){
     if(leap==1 && month > 2){
          sum++;
     }
-    CaculateWeekDay(year, month, day);
+    
 
     fprintf(output,"it is the %dth day", sum);
+    CaculateWeekDay(year, month, day);
 
     fclose(input);
     fclose(output);
