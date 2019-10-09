@@ -59,7 +59,6 @@ int main(){
          sum++;
     }
     
-
     fprintf(output,"it is the %dth day", sum);
     CaculateWeekDay(year, month, day);
 
