@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main ()
-{
+int main (){
     int a[10], c=0;
     int i, j, n[10];
     FILE * input;
