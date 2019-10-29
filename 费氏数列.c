@@ -1,5 +1,6 @@
 #include <stdio.h>
-long long Fb(long N){
+/*迭代*/
+long long Fbnl(long N){
     long a1 = 0;
     long a2 = 1;
     long a3 = N;
@@ -10,14 +11,29 @@ long long Fb(long N){
     }
     return a3;
 }
+/*递归*/
+long long Fbn2(long n){
+     if (n <= 0){
+         return 0 ;
+     }
+     else if (n <= 2){
+         return 1 ;    //递归终止条件
+     }
+     else{
+         return Fbn2(n-1) + Fbn2(n-2) ;    //递归
+     }
+}
 int main(){
     int n;
     while(scanf("%d", &n) != EOF){
         if(n>92){
             break;
         }
-        long tmp = Fb(n);
-        printf("%ld", tmp);
+        long tmp = Fbnl(n);
+        long tmp1 = Fbn2(n);
+        printf("迭代算法 %ld\n", tmp);
+        printf("递归算法 %ld", tmp1);
+
         printf("\n");
     }
 }
