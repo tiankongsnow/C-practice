@@ -15,8 +15,7 @@ int main (){
     for (j=0; j <10; j++){
         for (i=2; i<a[j]-1; i++){
             if (a[j] % i == 0){
-                n[j]++; //不是质数就加一;
-                //printf("%d\n", a[j]);
+                n[j]++; //不是质数就加1
                 break;
             }
         }
