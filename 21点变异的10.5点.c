@@ -100,12 +100,12 @@ int main()
         /*more than 21 points*/
         if(player_point > 10.5)
         {
-            printf("player win\n");
+            printf("computer win\n");
             return 0;
         }
         else if(com_point > 10.5)
         {
-            printf("computer win\n");
+            printf("player win\n");
             return 0;
         }
         if(player_point < 7 || com_point < 7)
@@ -118,7 +118,6 @@ int main()
             printf("Does player want to continue?(1/2):");
             scanf("%d",&choose);
         }
-
 
         if(choose == 2)
         {
@@ -139,3 +138,5 @@ int main()
     }
     return 0;
 }
+
+
