@@ -64,14 +64,9 @@ int main(){
         for(i = 0; i <=largestLen; i++){
             printf("%d\t%d\n", i, length[i]);
         }
+        printf("word letter sum：%d\n", sum);
+        printf("word count：%d\n", wordCount);
         printf("average word length: %f\n", (float)sum/wordCount);
     }
-    printf("longest word: %s\n", longestWord);
-    for(i = 0; i <=largestLen; i++){
-        printf("%d\t%d\n", i, length[i]);
-    }
-    printf("word letter sum：%d\n", sum);
-    printf("word count：%d\n", wordCount);
-    printf("average word length: %f\n", (float)sum/wordCount);
     
 }
