@@ -71,7 +71,7 @@ int main(){
         printf("%d\t%d\n", i, length[i]);
     }
     printf("word letter sum：%d\n", sum);
-    printf("word count：%f\n", wordCount);
+    printf("word count：%d\n", wordCount);
     printf("average word length: %f\n", (float)sum/wordCount);
     
 }
