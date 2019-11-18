@@ -30,13 +30,11 @@ int comp(int computer_num){
         else{
             if(player_num > computer_num){
                 top_num = player_num;
-                //printf("please guess a number from %d~%d:", low_num, top_num);
                 printf("it is too high\n");
                 i++;
             }
             else if(player_num < computer_num){
                 low_num = player_num;
-                //printf("please guess a number from %d~%d:", low_num, top_num);
                 printf("it is too low\n");
                 i++;
             }
