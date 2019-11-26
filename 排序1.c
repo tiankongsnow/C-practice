@@ -1,5 +1,6 @@
+/*冒泡排序  bubble sort */
 #include<stdio.h>
-int bubble(int arr[], int n){
+void bubble(int arr[], int n){
     int i , j;
     int temp;
     for(i=0; i<n-1; i++){
@@ -12,7 +13,6 @@ int bubble(int arr[], int n){
             }
         }
     }
-    return 0;
 }
 int main(){
     int i;
