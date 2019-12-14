@@ -1,6 +1,7 @@
 /*插入排序 Insertion Sort  哨兵  直接插入排序*/
 
 #include<stdio.h>
+
 int insert(int arr[], int n){   //从小到大排序
     int i;
     int j;
