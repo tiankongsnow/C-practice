@@ -24,6 +24,7 @@ int main(){
     /*二维数组m*n,已知第一维,动态分配空间*/
     for(i=0; i<m; i++){
         b[i] = (char*)malloc(sizeof(char*) * n);
+        //*(b + i) = (char*)malloc(sizeof(char*) * n);
     }
     printf("二维数组m*n,已知第一维,动态分配空间\n");
     printf("sizeof(b) = %ld byte\n", sizeof(b));//8*m，指针数组
@@ -54,6 +55,7 @@ int main(){
     d = (char **)malloc(sizeof(char *) * m);
     for(i=0; i<m; i++){
         d[i] = (char *)malloc(sizeof(char) * n);//分配每个指针所指向的数组
+        // *(d + i) = (char *)malloc(sizeof(char) * n);
     }
     printf("二维数组m*n,两维都未知,动态分配空间\n");
     printf("sizeof(d) = %ld byte\n", sizeof(d));//8，指针
