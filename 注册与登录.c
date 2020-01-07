@@ -26,7 +26,7 @@ int main()
             printf("New password:");
             scanf("%s",password);
 
-            FILE *inp = fopen("sql.txt","a"); //a独自产生文件 ,可以接着输入不覆盖, w会覆盖 , r 前提是已经建立好文件
+            FILE *inp = fopen("sql.txt","r"); //a独自产生文件 ,可以接着输入不覆盖, w会覆盖 , r 前提是已经建立好文件
             int state = 0;
             char sql_account[50], sql_password[50];
             while(fscanf(inp,"%s%s",sql_account, sql_password)!=EOF){
